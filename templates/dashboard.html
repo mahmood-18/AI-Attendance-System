@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card shadow border-0 mb-4">
+            <div class="card-header bg-info text-white">
+                <h5>Welcome, {{ current_user.full_name or current_user.username }}</h5>
+            </div>
+            <div class="card-body">
+                <h6>Today's Attendance</h6>
+                {% if today_attendance %}
+                <p class="text-success fw-bold">Marked at {{ today_attendance.time_in.strftime('%I:%M %p') }}</p>
+                <p>Confidence: {{ (today_attendance.confidence * 100)|round(1) }}%</p>
+                {% else %}
+                <p class="text-warning">Not marked yet today</p>
+                {% endif %}
+                <hr>
+                <h6>Overall Attendance</h6>
+                <p class="display-6 text-primary">{{ attendance_percentage }}%</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card shadow border-0">
+            <div class="card-header bg-warning text-dark">
+                <h5>Quick Actions</h5>
+            </div>
+            <div class="card-body text-center">
+                <a href="{{ url_for('attendance') }}" class="btn btn-primary btn-lg m-2">Mark Attendance</a>
+                <a href="{{ url_for('reports') }}" class="btn btn-outline-secondary btn-lg m-2">View Reports</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

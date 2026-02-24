@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Mark Attendance{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-primary text-white text-center">
+                <h4><i class="bi bi-camera-video-fill"></i> Live Face Recognition</h4>
+            </div>
+            <div class="card-body text-center p-4">
+                <div class="ratio ratio-16x9 mb-4 border rounded shadow" style="max-width: 900px; margin: auto;">
+                    <img src="{{ url_for('video_feed') }}" class="w-100" alt="Live Feed">
+                </div>
+                <button class="btn btn-success btn-lg px-5 py-3" onclick="markNow()">
+                    <i class="bi bi-check-circle-fill me-2"></i>Mark My Attendance
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function markNow() {
+    fetch('/mark_attendance', { method: 'POST' })
+        .then(r => r.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(err => alert('Error: ' + err));
+}
+</script>
+{% endblock %}
