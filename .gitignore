@@ -13,3 +13,9 @@ __pycache__/
 
 # Wheel files
 *.whl
+# Database
+database.db
+*.db
+
+# Instance folder
+instance/
