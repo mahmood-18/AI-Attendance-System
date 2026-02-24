@@ -1,4 +1,4 @@
-\# 🎓 AI-Based Attendance System using Face Recognition
+ 🎓 AI-Based Attendance System using Face Recognition
 
 
 
@@ -14,11 +14,11 @@ This project eliminates manual attendance processes and improves accuracy, effic
 
 
 
-\## 🚀 Features
+ 🚀 Features
 
 
 
-\- 🧠 AI-based identity matching  
+ 🧠 AI-based identity matching  
 
 \- 🗂 Automatic Attendance Logging (CSV format)  
 
@@ -106,7 +106,7 @@ AI-Attendance-System/
 
 
 
-\### 1️⃣ Clone the Repository
+ 1️⃣ Clone the Repository
 
 
 
@@ -120,7 +120,7 @@ cd AI-Attendance-System
 
 
 
-\### 2️⃣ Create Virtual Environment
+ 2️⃣ Create Virtual Environment
 
 
 
@@ -134,7 +134,7 @@ venv\\Scripts\\activate
 
 
 
-\### 3️⃣ Install Dependencies
+ 3️⃣ Install Dependencies
 
 
 
@@ -146,7 +146,7 @@ pip install -r requirements.txt
 
 
 
-\### 4️⃣ Run the Application
+ 4️⃣ Run the Application
 
 
 
@@ -174,7 +174,7 @@ http://127.0.0.1:5000/
 
 
 
-\## 📈 Future Enhancements
+ 📈 Future Enhancements
 
 
 
@@ -196,7 +196,7 @@ http://127.0.0.1:5000/
 
 
 
-\## 🎯 Learning Outcomes
+ 🎯 Learning Outcomes
 
 
 
@@ -224,11 +224,9 @@ Through this project, I gained hands-on experience in:
 
 
 
-\## 👨‍💻 Author
+ 👨‍💻 Author
 
-
-
-\*\*Mahmood Naina\*\*  
+Mahmood Naina 
 
 Engineering Student | AI \& Full Stack Enthusiast  
 
