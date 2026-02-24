@@ -1,0 +1,69 @@
+# Python / Virtual Environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+.env
+*.env
+
+# Database & local data files
+*.db
+*.sqlite3
+*.sqlite
+database.db
+
+# Large / sensitive folders
+known_faces/*
+!known_faces/.gitkeep          # optional: keeps folder empty but present
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+temp/
+cache/
+
+# Build / distribution files
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Dependency management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Byte-compiled / optimized files
+*.py[cod]
+
+# Coverage and testing
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache
+ehthumbs_vista.db
+
+# End of file
