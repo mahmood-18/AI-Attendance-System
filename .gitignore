@@ -1,21 +1,27 @@
-# Virtual environment
-.venv-1/
+# Ignore face data folders
+images/
+known_faces/
+
+# Ignore database
+database.db
+*.db
+instance/
+
+# Ignore generated attendance file
+Attendance.csv
+
+# Ignore virtual environments
+.venv/
 venv/
-env/
 
-# VS Code / Visual Studio
-.vs/
-.vscode/
-
-# Python cache
+# Ignore Python cache
 __pycache__/
 *.pyc
 
-# Wheel files
-*.whl
-# Database
-database.db
-*.db
+# Ignore logs
+*.log
 
-# Instance folder
-instance/
+# Ignore model/cache files
+*.pkl
+*.h5
+*.whl
