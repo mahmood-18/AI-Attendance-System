@@ -21,31 +21,35 @@ Technologies used
 Project folder structure
 
 AI-Attendance-System/
-├── app.py                  # main Flask application with routes and recognition logic
-├── config.py               # settings like paths, tolerance value, camera index
-├── utils.py                # helper functions: loading encodings, comparing faces, saving attendance
-├── models.py               # database models (only if using SQLAlchemy + SQLite)
-├── requirements.txt        # all the packages needed
-├── Attendance.csv          # where attendance gets logged
+├── app.py                    # main Flask application with routes and recognition logic
+├── config.py                 # settings like paths, tolerance value, camera index
+├── utils.py                  # helper functions: loading encodings, comparing faces, saving attendance
+├── models.py                 # database models (only if using SQLAlchemy + SQLite)
+├── requirements.txt          # all the packages needed
+├── Attendance.csv            # where attendance gets logged
 │
-├── templates/              # HTML files
-│   ├── index.html          # main page with start button and video feed
-│   └── attendance.html     # page to see the attendance records
+├── templates/                # HTML files
+│   ├── index.html            # main page with start button and video feed
+│   └── attendance.html       # page to see the attendance records
 │
-├── static/                 # CSS, JS, and static images
+├── static/                   # CSS, JS, and static images
 │   ├── css/
 │   │   └── style.css
 │   └── js/
-│       └── script.js       # handles webcam in browser
+│       └── script.js         # handles webcam in browser
 │
-├── images/                 # temporary photos captured during recognition
-├── known_faces/            # student photos + encodings file
-│   ├── encodings.pkl       # saved face encodings (important!)
+├── images/                   # temporary photos captured during recognition
+│
+├── known_faces/              # student photos + encodings file
+│   ├── encodings.pkl         # saved face encodings (important!)
 │   ├── 101_John.jpg
-│   └── 102_Sarah.png       # (example naming: roll_number_name.jpg)
+│   └── 102_Sarah.png         # (example naming: roll_number_name.jpg)
 │
-├── database.db             # appears if you use SQLite
-└── README.md               # this file
+├── database.db               # appears if you use SQLite
+│
+└── README.md                 # this file
+
+
 
 How to set it up
 
@@ -99,4 +103,3 @@ What I learned doing this
 
 Made by  
 Mahmood Naina M.M
-Engineering student.
